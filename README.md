@@ -1,5 +1,7 @@
 # chef-apktool
 
+[![Build Status](https://travis-ci.org/joshmcarthur/chef-apktool.svg?branch=master)](https://travis-ci.org/joshmcarthur/chef-apktool)
+
 A Chef cookbook for downloading and installing [apktool](https://code.google.com/p/android-apktool/), a Java-based utility for extracting data from Android APK files.
 
 
