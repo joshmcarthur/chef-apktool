@@ -3,15 +3,11 @@ require 'spec_helper'
 describe 'apktool::default' do
   let(:chef_run) { ChefSpec::SoloRunner.new.converge(described_recipe) }
 
-  it 'downloads and extracts APK helpers' do
-    expect(chef_run).to download_and_extract_package 'apktool'
+  it 'downloads APKTool helper script' do
+    expect(chef_run).to create_remote_file('/usr/local/bin/apktool').with(mode: 755)
   end
 
-  it 'downloads and extracts APK JAR file' do
-    expect(chef_run).to download_and_extract_package 'apktool-jar'
-  end
-
-  it 'creates a symlink between the APK helpers and the JAR file' do
-    expect(chef_run).to create_link '/opt/apktool/apktool.jar'
+  it 'downloads and extracts the APK JAR file' do
+    expect(chef_run).to create_remote_file('/usr/local/bin/apktool.jar').with(mode: 755)
   end
 end
