@@ -10,4 +10,5 @@ version          '0.1.2'
   supports os
 end
 
+depends "apt"
 depends "java"
