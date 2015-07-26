@@ -2,3 +2,7 @@ language: ruby
 sudo: false
 cache: bundler
 script: bundle exec rspec
+
+# Recent versions of Ohai require Ruby 2.0
+rbenv:
+  - 2.1.0
