@@ -12,12 +12,12 @@ include_recipe "java"
 
 remote_file '/usr/local/bin/apktool' do
   source 'https://raw.githubusercontent.com/iBotPeaches/Apktool/master/scripts/linux/apktool'
-  mode 755
+  mode '0755'
   action :create
 end
 
 remote_file '/usr/local/bin/apktool.jar' do
   source 'https://bitbucket.org/iBotPeaches/apktool/downloads/apktool_2.0.1.jar'
-  mode 755
+  mode '0755'
   action :create
 end
