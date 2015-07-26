@@ -11,4 +11,3 @@ version          '0.1.2'
 end
 
 depends "java"
-depends "ark"
