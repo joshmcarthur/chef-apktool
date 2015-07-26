@@ -4,5 +4,5 @@ cache: bundler
 script: bundle exec rspec
 
 # Recent versions of Ohai require Ruby 2.0
-rbenv:
+rvm:
   - 2.1.0
