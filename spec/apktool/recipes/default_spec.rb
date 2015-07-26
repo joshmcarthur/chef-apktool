@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe 'apktool::default' do
-  let(:chef_run) { ChefSpec::Runner.new.converge(described_recipe) }
+  let(:chef_run) { ChefSpec::SoloRunner.new.converge(described_recipe) }
 
   it 'downloads and extracts APK helpers' do
     expect(chef_run).to download_and_extract_package 'apktool'
