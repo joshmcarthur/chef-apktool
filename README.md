@@ -27,9 +27,17 @@ Version 1.3 and onwards installs APK Tool version 2.x, which requires Java 7 (Op
 
 ## Attributes
 
-There are no attributes for this cookbook, as the recipe itself is so simple.
-A pull request would be welcome to allow the user of this cookbook to select
-the flavour of Java that they wish to install and/or use though.
+There is a single attribute available that will control which version of APKTool will be downloaded and installed. Available versions may be found here: https://bitbucket.org/iBotPeaches/apktool/downloads/
+
+Example:
+
+```
+node[:apktool][:version] = '2.0.0'
+```
+
+Would install version 2.0.0 from the downloads.
+
+APKTool also requires Java, so we use the [java cookbook](https://supermarket.chef.io/cookbooks/java) to install OpenJDK version 7. You can override any of the attributes from this cookbook if you wish to change which flavour of Java is installed, etc (check out the docs for the Java cookbook to see the available options).
 
 
 ## Usage
