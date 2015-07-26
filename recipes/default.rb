@@ -17,7 +17,7 @@ remote_file '/usr/local/bin/apktool' do
 end
 
 remote_file '/usr/local/bin/apktool.jar' do
-  source 'https://bitbucket.org/iBotPeaches/apktool/downloads/apktool_2.0.1.jar'
+  source "https://bitbucket.org/iBotPeaches/apktool/downloads/apktool_#{node['apktool']['version']}.jar"
   mode '0755'
   action :create
 end
