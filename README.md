@@ -4,6 +4,12 @@
 
 A Chef cookbook for downloading and installing [apktool](https://code.google.com/p/android-apktool/), a Java-based utility for extracting data from Android APK files.
 
+## Important Note
+
+<= Version 1.2 of this cookbook installed APKTool version 1.x, which requires Java 6 and has a different installation method. If you need to use this version of APKTool, then you must use an older version of this cookbook. 
+
+Version 1.3 and onwards installs APK Tool version 2.x, which requires Java 7 (OpenJDK will be installed as part of the Chef run). 
+
 
 ## Supported Platforms
 
